@@ -3,10 +3,7 @@ import 'package:toktik/domain/video_post.dart';
 import 'package:toktik/infrastructure/models/local_video_model.dart';
 import 'package:toktik/shared/data/local_video_posts.dart';
 
-class DsicoverProvider extends ChangeNotifier {
-
-  // TODO: Repository, DataSourse
-
+class DiscoverProvider extends ChangeNotifier {
 
   bool initialLoading = true;
   List<VideoPost> videos = [];
