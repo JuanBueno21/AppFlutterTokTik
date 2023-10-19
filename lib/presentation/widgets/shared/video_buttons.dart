@@ -37,7 +37,7 @@ class _CustomIconButton extends StatelessWidget {
     required this.value,
     required this.iconData,
     iconColor
-    }): color = iconColor ??Colors.white;
+    }): color = iconColor ?? Colors.white;
 
   @override
   Widget build(BuildContext context) {
