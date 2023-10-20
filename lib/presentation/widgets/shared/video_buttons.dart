@@ -1,6 +1,6 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:toktik/domain/video_post.dart';
-
 import '../../../config/helpers/normal_formats.dart';
 
 class VideoButtons extends StatelessWidget {
@@ -16,12 +16,11 @@ class VideoButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        _CustomIconButton (value: video.likes, iconColor: Colors.red, iconData: Icons.favorite_border),
+        ZoomIn(child: _CustomIconButton (value: video.likes, iconColor: Colors.red, iconData: Icons.favorite_border)),
         const SizedBox(height: 20,),
-        _CustomIconButton (value: video.views, iconData: Icons.remove_red_eye_outlined),
+        ZoomIn(child: _CustomIconButton (value: video.views, iconData: Icons.remove_red_eye_outlined)),
         const SizedBox(height: 20,),
-        const _CustomIconButton (value: 0, iconData: Icons.comment)
-
+        ZoomIn (child: const _CustomIconButton (value: 0, iconData: Icons.comment))
       ],
     );
   }
