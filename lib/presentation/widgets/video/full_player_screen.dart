@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toktik/presentation/widgets/video/gradient_background%20.dart';
+import 'package:toktik/presentation/widgets/video/gradient_background.dart';
 import 'package:video_player/video_player.dart';
 
 class FullScreenPlayer extends StatefulWidget {
